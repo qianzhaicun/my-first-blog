@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>mybook</Name>
+    <RootNamespace>mybook</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <PythonRunWebServerCommandType />
+    <PythonDebugWebServerCommandType />
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>aaa2b256-1e54-4015-a739-28759664121f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost:8000</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="blog\admin.py" />
+    <Compile Include="blog\apps.py" />
+    <Compile Include="blog\migrations\__init__.py" />
+    <Compile Include="blog\models.py" />
+    <Compile Include="blog\tests.py" />
+    <Compile Include="blog\views.py" />
+    <Compile Include="blog\__init__.py" />
+    <Compile Include="books\admin.py" />
+    <Compile Include="books\apps.py" />
+    <Compile Include="books\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="books\migrations\__init__.py" />
+    <Compile Include="books\models.py" />
+    <Compile Include="books\tests.py" />
+    <Compile Include="books\views.py" />
+    <Compile Include="books\__init__.py" />
+    <Compile Include="hello\admin.py" />
+    <Compile Include="hello\apps.py" />
+    <Compile Include="hello\migrations\__init__.py" />
+    <Compile Include="hello\models.py" />
+    <Compile Include="hello\tests.py" />
+    <Compile Include="hello\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hello\views.py" />
+    <Compile Include="hello\__init__.py" />
+    <Compile Include="icecreamratings\config\settings\base.py" />
+    <Compile Include="icecreamratings\config\settings\local.py" />
+    <Compile Include="icecreamratings\config\settings\production.py" />
+    <Compile Include="icecreamratings\config\settings\test.py" />
+    <Compile Include="icecreamratings\config\settings\__init__.py" />
+    <Compile Include="icecreamratings\config\urls.py" />
+    <Compile Include="icecreamratings\config\wsgi.py" />
+    <Compile Include="icecreamratings\config\__init__.py" />
+    <Compile Include="icecreamratings\docs\conf.py" />
+    <Compile Include="icecreamratings\docs\__init__.py" />
+    <Compile Include="icecreamratings\icecreamratings\contrib\sites\migrations\0001_initial.py" />
+    <Compile Include="icecreamratings\icecreamratings\contrib\sites\migrations\0002_alter_domain_unique.py" />
+    <Compile Include="icecreamratings\icecreamratings\contrib\sites\migrations\0003_set_site_domain_and_name.py" />
+    <Compile Include="icecreamratings\icecreamratings\contrib\sites\migrations\__init__.py" />
+    <Compile Include="icecreamratings\icecreamratings\contrib\sites\__init__.py" />
+    <Compile Include="icecreamratings\icecreamratings\contrib\__init__.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\adapters.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\admin.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\apps.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\migrations\0001_initial.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\migrations\__init__.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\models.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\tests\factories.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\tests\test_admin.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\tests\test_models.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\tests\test_urls.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\tests\test_views.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\tests\__init__.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\urls.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\views.py" />
+    <Compile Include="icecreamratings\icecreamratings\users\__init__.py" />
+    <Compile Include="icecreamratings\icecreamratings\__init__.py" />
+    <Compile Include="icecreamratings\manage.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="mybook\__init__.py" />
+    <Compile Include="mybook\settings.py" />
+    <Compile Include="mybook\urls.py" />
+    <Compile Include="mybook\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="blog\" />
+    <Folder Include="blog\migrations\" />
+    <Folder Include="blog\templates\" />
+    <Folder Include="books\" />
+    <Folder Include="books\migrations\" />
+    <Folder Include="books\templates\" />
+    <Folder Include="books\templates\books\" />
+    <Folder Include="hello\" />
+    <Folder Include="hello\migrations\" />
+    <Folder Include="hello\templates\" />
+    <Folder Include="hello\templates\hello\" />
+    <Folder Include="icecreamratings\" />
+    <Folder Include="icecreamratings\config\" />
+    <Folder Include="icecreamratings\config\settings\" />
+    <Folder Include="icecreamratings\docs\" />
+    <Folder Include="icecreamratings\icecreamratings\" />
+    <Folder Include="icecreamratings\icecreamratings\contrib\" />
+    <Folder Include="icecreamratings\icecreamratings\contrib\sites\" />
+    <Folder Include="icecreamratings\icecreamratings\contrib\sites\migrations\" />
+    <Folder Include="icecreamratings\icecreamratings\static\" />
+    <Folder Include="icecreamratings\icecreamratings\static\css\" />
+    <Folder Include="icecreamratings\icecreamratings\static\fonts\" />
+    <Folder Include="icecreamratings\icecreamratings\static\images\" />
+    <Folder Include="icecreamratings\icecreamratings\static\js\" />
+    <Folder Include="icecreamratings\icecreamratings\static\sass\" />
+    <Folder Include="icecreamratings\icecreamratings\templates\" />
+    <Folder Include="icecreamratings\icecreamratings\templates\account\" />
+    <Folder Include="icecreamratings\icecreamratings\templates\bootstrap4\" />
+    <Folder Include="icecreamratings\icecreamratings\templates\bootstrap4\layout\" />
+    <Folder Include="icecreamratings\icecreamratings\templates\pages\" />
+    <Folder Include="icecreamratings\icecreamratings\templates\users\" />
+    <Folder Include="icecreamratings\icecreamratings\users\" />
+    <Folder Include="icecreamratings\icecreamratings\users\migrations\" />
+    <Folder Include="icecreamratings\icecreamratings\users\tests\" />
+    <Folder Include="icecreamratings\requirements\" />
+    <Folder Include="icecreamratings\utility\" />
+    <Folder Include="mybook\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\templates\app\latest_books.html" />
+    <Content Include="blog\templates\index.html" />
+    <Content Include="books\templates\books\contact.html" />
+    <Content Include="books\templates\books\search.html" />
+    <Content Include="books\templates\books\thank.html" />
+    <Content Include="books\templates\index.html" />
+    <Content Include="hello\templates\hello\base.html" />
+    <Content Include="hello\templates\hello\current_datetime.html" />
+    <Content Include="hello\templates\index.html" />
+    <Content Include="icecreamratings\.coveragerc" />
+    <Content Include="icecreamratings\.editorconfig" />
+    <Content Include="icecreamratings\.gitattributes" />
+    <Content Include="icecreamratings\.gitignore" />
+    <Content Include="icecreamratings\.pylintrc" />
+    <Content Include="icecreamratings\.travis.yml" />
+    <Content Include="icecreamratings\docs\deploy.rst" />
+    <Content Include="icecreamratings\docs\docker_ec2.rst" />
+    <Content Include="icecreamratings\docs\index.rst" />
+    <Content Include="icecreamratings\docs\install.rst" />
+    <Content Include="icecreamratings\docs\make.bat" />
+    <Content Include="icecreamratings\docs\Makefile" />
+    <Content Include="icecreamratings\env.example" />
+    <Content Include="icecreamratings\Gruntfile.js" />
+    <Content Include="icecreamratings\icecreamratings\static\css\project.css" />
+    <Content Include="icecreamratings\icecreamratings\static\fonts\.gitkeep" />
+    <Content Include="icecreamratings\icecreamratings\static\images\favicon.ico" />
+    <Content Include="icecreamratings\icecreamratings\static\js\project.js" />
+    <Content Include="icecreamratings\icecreamratings\static\sass\custom_bootstrap_vars.scss" />
+    <Content Include="icecreamratings\icecreamratings\static\sass\project.scss" />
+    <Content Include="icecreamratings\icecreamratings\templates\403_csrf.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\404.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\500.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\account_inactive.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\base.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\email.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\email_confirm.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\login.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\logout.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\password_change.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\password_reset.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\password_reset_done.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\password_reset_from_key.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\password_reset_from_key_done.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\password_set.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\signup.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\signup_closed.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\verification_sent.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\account\verified_email_required.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\base.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\bootstrap4\field.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\bootstrap4\layout\field_errors_block.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\pages\about.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\pages\home.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\users\user_detail.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\users\user_form.html" />
+    <Content Include="icecreamratings\icecreamratings\templates\users\user_list.html" />
+    <Content Include="icecreamratings\LICENSE" />
+    <Content Include="icecreamratings\package.json" />
+    <Content Include="icecreamratings\pytest.ini" />
+    <Content Include="icecreamratings\README.rst" />
+    <Content Include="icecreamratings\requirements\base.txt" />
+    <Content Include="icecreamratings\requirements\local.txt" />
+    <Content Include="icecreamratings\requirements\production.txt" />
+    <Content Include="icecreamratings\requirements\test.txt" />
+    <Content Include="icecreamratings\setup.cfg" />
+    <Content Include="icecreamratings\utility\install_os_dependencies.sh" />
+    <Content Include="icecreamratings\utility\install_python_dependencies.sh" />
+    <Content Include="icecreamratings\utility\requirements-jessie.apt" />
+    <Content Include="icecreamratings\utility\requirements-trusty.apt" />
+    <Content Include="icecreamratings\utility\requirements-xenial.apt" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

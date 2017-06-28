@@ -1,0 +1,16 @@
+ContextDecodingException
+InvalidConfiguration
+FailedHookException
+ConfigDoesNotExistException
+UnknownTemplateDirException
+InvalidModeException
+UnknownExtension
+UndefinedVariableInTemplate
+VCSNotInstalled
+RepositoryCloneFailed
+UnknownRepoType
+OutputDirExistsException
+NonTemplatedInputDirException
+MissingProjectDir
+RepositoryNotFound
+CookiecutterException
